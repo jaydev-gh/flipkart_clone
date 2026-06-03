@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart – India's Online Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <span>🎉 Big Billion Days Sale — Extra 10% off on HDFC cards!</span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <span class="logo-flip">flipkart</span>
+      <span class="logo-sub">Explore <span class="logo-plus">Plus</span> <i class="fa-solid fa-star logo-star"></i></span>
+    </a>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more" />
+      <button class="search-btn">Search</button>
+    </div>
+
+    <!-- Right Controls -->
+    <div class="nav-right">
+      <div class="nav-btn login-btn" id="loginBtn">
+        <i class="fa-regular fa-circle-user"></i>
+        <span>Login</span>
+        <i class="fa-solid fa-chevron-down fa-xs"></i>
+      </div>
+
+      <div class="nav-btn">
+        <i class="fa-solid fa-store"></i>
+        <span>Become a Seller</span>
+      </div>
+
+      <div class="nav-btn cart-btn" id="cartBtn">
+        <div class="cart-icon-wrap">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge" id="cartBadge">3</span>
+        </div>
+        <span>Cart</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Bar -->
+  <div class="cat-bar">
+    <div class="cat-scroll">
+      <a class="cat-item active" href="#"><i class="fa-solid fa-bag-shopping"></i><span>For You</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-mobile-screen"></i><span>Mobiles</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-shirt"></i><span>Fashion</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-display"></i><span>Electronics</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-lightbulb"></i><span>Home</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-tv"></i><span>Appliances</span></a>
+      <a class="cat-item" href="#">💄<span>Beauty</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-baseball-bat-ball"></i><span>Sports</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-cubes-stacked"></i><span>Toys</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-book"></i><span>Books</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-bowl-rice"></i><span>Grocery</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-couch"></i><span>Furniture</span></a>
+      <a class="cat-item" href="#"><i class="fa-solid fa-motorcycle"></i><span>2 Wheeler</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAIN ============ -->
+<main>
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero-section">
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/52dff66d7ee2e898.jpg?q=60" alt="Banner 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/39b701f146ffde22.jpg?q=60" alt="Banner 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/013f92d84dc27383.png?q=60" alt="Banner 3" />
+        </div>
+        <div class="carousel-slide">
+          <img src="https://rukminim2.flixcart.com/fk-p-flap/1020/500/image/3fe723b8ddacb2a7.png?q=90" alt="Banner 4" />
+        </div>
+      </div>
+      <button class="carousel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="carousel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- FLASH SALE -->
+  <section class="flash-sale card-section">
+    <div class="section-header">
+      <div class="section-title-group">
+        <span class="flash-icon">⚡</span>
+        <h2>Flash Sale</h2>
+        <div class="countdown" id="countdown">
+          <div class="time-block"><span id="hours">08</span><small>Hrs</small></div>
+          <span class="sep">:</span>
+          <div class="time-block"><span id="mins">34</span><small>Min</small></div>
+          <span class="sep">:</span>
+          <div class="time-block"><span id="secs">21</span><small>Sec</small></div>
+        </div>
+      </div>
+      <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right fa-xs"></i></a>
+    </div>
+
+    <div class="products-grid" id="flashProducts">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- TOP MOBILES -->
+  <section class="top-mobiles card-section">
+    <div class="section-header">
+      <div class="section-title-group">
+        <span class="section-emoji">📱</span>
+        <h2>Top Mobiles</h2>
+      </div>
+      <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right fa-xs"></i></a>
+    </div>
+    <div class="products-grid" id="mobileProducts"></div>
+  </section>
+
+  <!-- QUICK CATEGORIES GRID -->
+  <section class="quick-cats card-section">
+    <div class="section-header">
+      <h2>Shop by Category</h2>
+    </div>
+    <div class="quick-cats-grid">
+      <a href="#" class="qcat-card" style="--accent:#2874f0">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/key-holder/b/w/u/7-keh-9005-sndart-original-imahkz6wasv53bru.jpeg?q=70" alt="Home Decor"/>
+        <span>Home Decor</span>
+        <small>Min 50% Off</small>
+      </a>
+      <a href="#" class="qcat-card" style="--accent:#e91e8c">
+        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/wall-clock/y/i/h/high-quality-quartz-decorative-classic-wall-clock-20-mt1202-20cm-original-imahhyg6hapzp6vx.jpeg?q=70" alt="Wall Clocks"/>
+        <span>Wall Clocks</span>
+        <small>Min 50% Off</small>
+      </a>
+      <a href="#" class="qcat-card" style="--accent:#ff9f00">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1020/500/image/67373e8611a1fa89.png?q=90" alt="Fashion"/>
+        <span>Fashion</span>
+        <small>New Arrivals</small>
+      </a>
+      <a href="#" class="qcat-card" style="--accent:#26a541">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1020/500/image/3fe723b8ddacb2a7.png?q=90" alt="Electronics"/>
+        <span>Electronics</span>
+        <small>Top Brands</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- BRANDS IN SPOTLIGHT -->
+  <section class="spotlight card-section">
+    <div class="section-header">
+      <h2>Brands in Spotlight</h2>
+      <a href="#" class="view-all">View All <i class="fa-solid fa-chevron-right fa-xs"></i></a>
+    </div>
+    <div class="spotlight-grid">
+      <div class="spotlight-card big">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1020/500/image/3fe723b8ddacb2a7.png?q=90" alt="Brand 1" />
+        <div class="spotlight-overlay"><span>Samsung Galaxy</span></div>
+      </div>
+      <div class="spotlight-card">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/1020/500/image/67373e8611a1fa89.png?q=90" alt="Brand 2" />
+        <div class="spotlight-overlay"><span>Trendy Fashion</span></div>
+      </div>
+      <div class="spotlight-card">
+        <img src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/013f92d84dc27383.png?q=60" alt="Brand 3" />
+        <div class="spotlight-overlay"><span>Tech Deals</span></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3>My Cart <span id="cartCount">3</span></h3>
+    <button class="close-cart" id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-item">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/s/d/u/-original-imaghx9qkumdydfn.jpeg?q=70" alt="Phone" />
+      <div class="cart-item-info">
+        <p class="cart-item-name">Samsung Galaxy S24</p>
+        <p class="cart-item-price">₹74,999</p>
+        <div class="cart-qty">
+          <button onclick="changeQty(this,-1)">−</button>
+          <span>1</span>
+          <button onclick="changeQty(this,1)">+</button>
+        </div>
+      </div>
+      <button class="remove-item" onclick="removeItem(this)"><i class="fa-solid fa-trash"></i></button>
+    </div>
+    <div class="cart-item">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/g/t/a/-original-imagufhfpzxsrzgv.jpeg?q=70" alt="Phone" />
+      <div class="cart-item-info">
+        <p class="cart-item-name">iPhone 15 Pro Max</p>
+        <p class="cart-item-price">₹1,59,999</p>
+        <div class="cart-qty">
+          <button onclick="changeQty(this,-1)">−</button>
+          <span>1</span>
+          <button onclick="changeQty(this,1)">+</button>
+        </div>
+      </div>
+      <button class="remove-item" onclick="removeItem(this)"><i class="fa-solid fa-trash"></i></button>
+    </div>
+    <div class="cart-item">
+      <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mobile/d/g/i/-original-imaghs7dczpf3fwg.jpeg?q=70" alt="Phone" />
+      <div class="cart-item-info">
+        <p class="cart-item-name">OnePlus 12R 5G</p>
+        <p class="cart-item-price">₹39,999</p>
+        <div class="cart-qty">
+          <button onclick="changeQty(this,-1)">−</button>
+          <span>1</span>
+          <button onclick="changeQty(this,1)">+</button>
+        </div>
+      </div>
+      <button class="remove-item" onclick="removeItem(this)"><i class="fa-solid fa-trash"></i></button>
+    </div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cartTotal">₹2,74,997</span>
+    </div>
+    <button class="place-order-btn">Place Order →</button>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>ABOUT</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Flipkart Stories</a>
+      <a href="#">Press</a>
+      <a href="#">Corporate Information</a>
+    </div>
+    <div class="footer-col">
+      <h4>GROUP COMPANIES</h4>
+      <a href="https://www.myntra.com/" target="_blank">Myntra</a>
+      <a href="https://www.cleartrip.com/" target="_blank">Cleartrip</a>
+      <a href="https://www.shopsy.in" target="_blank">Shopsy</a>
+    </div>
+    <div class="footer-col">
+      <h4>HELP</h4>
+      <a href="#">Payments</a>
+      <a href="#">Shipping</a>
+      <a href="#">Cancellation &amp; Returns</a>
+      <a href="#">FAQ</a>
+      <a href="#">Report Infringement</a>
+    </div>
+    <div class="footer-col">
+      <h4>CONSUMER POLICY</h4>
+      <a href="#">Terms Of Use</a>
+      <a href="#">Security</a>
+      <a href="#">Privacy</a>
+      <a href="#">Sitemap</a>
+      <a href="#">Grievance Redressal</a>
+      <a href="#">EPR Compliance</a>
+    </div>
+    <div class="footer-address">
+      <h4>Mail Us:</h4>
+      <p>Flipkart Internet Private Limited,</p>
+      <p>Buildings Alyssa, Begonia &amp; Clove</p>
+      <p>Embassy Tech Village, Outer Ring Road,</p>
+      <p>Bengaluru, 560103, Karnataka, India</p>
+      <h4 style="margin-top:14px">Follow Us:</h4>
+      <div class="footer-social">
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-links">
+      <a href="#"><i class="fa-solid fa-store"></i> Become a Seller</a>
+      <a href="#"><i class="fa-solid fa-bullhorn"></i> Advertise</a>
+      <a href="#"><i class="fa-solid fa-gift"></i> Gift Cards</a>
+      <a href="#"><i class="fa-solid fa-circle-question"></i> Help Center</a>
+    </div>
+    <p class="footer-copyright">© 2007–2026 Flipkart.com</p>
+    <div class="footer-payments">
+      <span class="pay-badge">VISA</span>
+      <span class="pay-badge">Mastercard</span>
+      <span class="pay-badge">RuPay</span>
+      <span class="pay-badge">UPI</span>
+      <span class="pay-badge">COD</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
